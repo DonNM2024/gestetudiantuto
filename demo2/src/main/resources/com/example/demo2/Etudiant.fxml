@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.EtudiantController">
+   <children>
+      <Label layoutX="11.0" layoutY="271.0" prefHeight="28.0" prefWidth="78.0" text="Prenom">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="215.0" prefHeight="28.0" prefWidth="62.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="157.0" prefHeight="45.0" prefWidth="155.0" text="Identifiant">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="326.0" prefHeight="28.0" prefWidth="52.0" text="Age">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="598.0" prefHeight="28.0" prefWidth="113.0" text="Telephone">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="559.0" prefHeight="28.0" prefWidth="70.0" text="Email">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="375.0" prefHeight="28.0" prefWidth="62.0" text="Sexe">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="-1.0" layoutY="424.0" prefHeight="28.0" prefWidth="143.0" text="DateNaissance">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="474.0" prefHeight="28.0" prefWidth="122.0" text="MotDepasse">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="514.0" prefHeight="28.0" prefWidth="91.0" text="Adresse">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="192.0" prefHeight="4.0" prefWidth="113.0" style="-fx-background-color: black;" />
+      <VBox layoutX="692.0" layoutY="340.0" prefHeight="287.0" prefWidth="162.0">
+         <children>
+            <Button fx:id="parentButton" mnemonicParsing="false" onAction="#toggleButtons" prefHeight="37.0" prefWidth="155.0" text="Menu Bouttons">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <VBox fx:id="buttonBox" alignment="TOP_CENTER" prefHeight="253.0" prefWidth="162.0" spacing="10.0" visible="false">
+               <children>
+                  <Button fx:id="savetf2" mnemonicParsing="false" onAction="#savebtn" prefHeight="13.0" prefWidth="139.0" text="Enregistrer">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="findtf2" mnemonicParsing="false" onAction="#findbtn" prefHeight="26.0" prefWidth="146.0" text="Rechercher">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="udatetf2" mnemonicParsing="false" onAction="#updatebtn" prefHeight="26.0" prefWidth="200.0" text="Modifier">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="deletetf2" mnemonicParsing="false" onAction="#deletebtn" prefHeight="31.0" prefWidth="141.0" text="Supprimer">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="detelealltf2" mnemonicParsing="false" onAction="#deleteallbtn" prefHeight="37.0" prefWidth="134.0" text="Supprimer tout">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="inftf2" mnemonicParsing="false" onAction="#database" prefHeight="31.0" prefWidth="132.0" text="Informations">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <TextField fx:id="idifianttf2" layoutX="167.0" layoutY="171.0" prefHeight="25.0" prefWidth="162.0" promptText="identifiant" />
+      <TextField fx:id="nomtf2" layoutX="167.0" layoutY="217.0" prefHeight="25.0" prefWidth="363.0" promptText="nom" />
+      <TextField fx:id="prenomtf2" layoutX="164.0" layoutY="273.0" prefHeight="25.0" prefWidth="369.0" promptText="prenom" />
+      <TextField fx:id="agetf2" layoutX="164.0" layoutY="328.0" prefHeight="25.0" prefWidth="369.0" promptText="age" />
+      <TextField fx:id="adresstf2" layoutX="158.0" layoutY="516.0" prefHeight="38.0" prefWidth="382.0" promptText="adresse" />
+      <TextField fx:id="emailtf2" layoutX="158.0" layoutY="561.0" prefHeight="31.0" prefWidth="382.0" promptText="adresse mail" />
+      <TextField fx:id="phonetf2" layoutX="158.0" layoutY="600.0" prefHeight="35.0" prefWidth="382.0" promptText="numero de telephone" />
+      <PasswordField fx:id="passwordtf2" layoutX="161.0" layoutY="476.0" prefHeight="31.0" prefWidth="375.0" promptText="mot de passe" />
+      <Label layoutX="230.0" layoutY="14.0" prefHeight="55.0" prefWidth="483.0" text="GESTION DES ETUDIANTS" textFill="#5e00ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sexetf2" layoutX="164.0" layoutY="375.0" prefHeight="28.0" prefWidth="369.0" />
+      <TextField fx:id="datnaisstf2" layoutX="164.0" layoutY="423.0" prefHeight="31.0" prefWidth="369.0" promptText="format: J/M/A" />
+      <ImageView fx:id="imageView" fitHeight="115.0" fitWidth="173.0" layoutX="363.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="parcoubtn" layoutX="5.0" layoutY="638.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="25.0" prefWidth="99.0" text="Parcourrir" />
+      <FontAwesomeIconView fill="#1202f2" glyphName="UNIVERSITY" layoutX="3.0" layoutY="138.0" size="150" text="" />
+   </children>
+</Pane>

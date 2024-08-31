@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1426.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.DataBaseController">
+   <children>
+      <TableView fx:id="tableetudiant" prefHeight="654.0" prefWidth="1414.0">
+        <columns>
+          <TableColumn fx:id="idtf2" prefWidth="60.0" text="ID" />
+            <TableColumn fx:id="nomtf2" prefWidth="170.0" text="NOM" />
+            <TableColumn fx:id="prenomtf2" prefWidth="150.00003051757812" text="PRENOM" />
+            <TableColumn fx:id="agetf2" prefWidth="91.0" text="AGE" />
+            <TableColumn fx:id="sexeTf2" prefWidth="82.0" text="SEXE" />
+            <TableColumn fx:id="datenaisstf2" prefWidth="154.0" text="DATE DE NAISSANCE" />
+            <TableColumn fx:id="passwordtf2" prefWidth="157.0" text="Mot De Passe" />
+            <TableColumn fx:id="adressetf2" prefWidth="122.0" text="Adresse" />
+            <TableColumn fx:id="emailTf2" minWidth="0.0" prefWidth="126.0" text="Email" />
+            <TableColumn fx:id="phonetf2" minWidth="0.0" prefWidth="141.0" text="Telephone" />
+            <TableColumn fx:id="imagetf2" minWidth="0.0" prefWidth="170.0" text="Image" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="RED" glyphName="PRINT" size="40" wrappingWidth="47.85714340209961" />
+      <Button mnemonicParsing="false" text="imprimer" />
+   </children>
+</VBox>
